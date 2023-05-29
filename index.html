@@ -5,20 +5,125 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix clone</title>
+    <link rel="icon" href="./imgs/net2.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 </head>
 <body>
+
+    <!-- ---------- Header section -------------- -->
+    <nav>
+        <img class="logo" src="./imgs/logo.png" alt="">
+        <div>
+            <button class="language-btn">English <i class="fa fa-angle-down"></i></button>
+            <button>Sign in</button>
+        </div>
+    </nav>
     <div class="header">
-        <nav>
-            <img class="logo" src="./imgs/logo.png" alt="">
-            <div>
-                <button class="language-btn">English <i class="fa fa-angle-down"></i></button>
-                <button>Sign in</button>
+        <div class="header-content">
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="email-signup">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Get Started <i class="fa fa-angle-right"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ------------- Features section ------------- -->
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2>Enjoy on your TV</h2>
+                <p>Watch on smart TVs, PlayStations, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
             </div>
-        </nav>
-        
+            <div class="img-col">
+                <img src="./imgs/tv.png" alt="">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="img-col">
+                <img src="./imgs/stran.png" alt="">
+            </div>
+            <div class="text-col">
+                <h2>Download your shows to watch offline</h2>
+                <p>Save your favorites easily and always have something to watch.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="text-col">
+                <h2>Watch everywhere</h2>
+                <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+            </div>
+            <div class="img-col">
+                <img src="./imgs/brdg.png" alt="">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="img-col">
+                <img src="./imgs/kids.png" alt="">
+            </div>
+            <div class="text-col">
+                <h2>Create profiles for kids</h2>
+                <p>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------- FAQ section -------------- -->
+    <div class="faq">
+        <h2>Frequently Asked Question</h2>
+        <ul class="accordion">
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">What is Netflix?</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+                       elit. Cum quo sunt earum ullam harum cupiditate 
+                       dolores officiis a quia excepturi. Sed similique, 
+                       cupiditate ut adipisci laborum sequi cum cumque nemo?
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="second">
+                <label for="second">How much does Netflix cost?</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+                       elit. Cum quo sunt earum ullam harum cupiditate 
+                       dolores officiis a quia excepturi. Sed similique, 
+                       cupiditate ut adipisci laborum sequi cum cumque nemo?
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">What is Netflix?</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+                       elit. Cum quo sunt earum ullam harum cupiditate 
+                       dolores officiis a quia excepturi. Sed similique, 
+                       cupiditate ut adipisci laborum sequi cum cumque nemo?
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="accordion" id="first">
+                <label for="first">What is Netflix?</label>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+                       elit. Cum quo sunt earum ullam harum cupiditate 
+                       dolores officiis a quia excepturi. Sed similique, 
+                       cupiditate ut adipisci laborum sequi cum cumque nemo?
+                    </p>
+                </div>
+            </li>
+        </ul>
     </div>
 </body>
 </html>
