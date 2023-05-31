@@ -7,8 +7,16 @@
 }
 
 
+:root {
+    --net-red: #db0001;
+    --net-red-hover: #a60606;
+    --net-dark-blue: rgb(0, 0, 43);
+    --net-ash: rgb(100, 105, 110);
+}
+
+
 body {
-    background: rgb(0, 0, 43);
+    background: var(--net-dark-blue);
     color: #fff;
 }
 
@@ -32,7 +40,7 @@ nav {
 nav button {
     border: 0;
     outline: 0;
-    background: #db0001;
+    background: var(--net-red);
     color: #fff;
     padding: 5px 15px;
     font-size: 0.9rem;
@@ -77,16 +85,16 @@ nav button {
 
 
 .header-content h1 {
-    font-size: 60px;
-    line-height: 70px;
-    font-weight: 600;
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: bold;
     max-width: 650px;
 }
 
 
 .header-content h3 {
     font-weight: 400;
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
 }
 
 
@@ -113,13 +121,13 @@ nav button {
     font-family: 'Times New Roman', Times, serif;
     background: #000;
     color: #fff;
-    border: 1px solid rgb(100, 105, 110);
+    border: 1px solid var(--net-ash);
     border-radius: 5px;
 }
 
 
 .email-signup button {
-    background: #db0001;
+    background: var(--net-red);
     border: 0;
     border-radius: 5px;
     outline: 0;
@@ -136,8 +144,8 @@ nav button {
 }
 
 
-.email-signup button:hover {
-    background: #a60606;
+.email-signup button:hover, nav div button:hover:nth-child(2) {
+    background: var(--net-red-hover);
     transition: 1s;
 }
 
@@ -146,8 +154,7 @@ nav button {
 .features {
     width: 100%;
     margin: auto;
-    padding: 50px 12%;
-    font-size: 22px;
+    padding-top: 4rem;
 }
 
 
@@ -160,6 +167,7 @@ nav button {
     margin-top: 5rem;
     gap: 1rem;
     text-align: center;
+    padding: 0 12%;
 }
 
 
@@ -187,32 +195,31 @@ nav button {
 }
 
 
-.features h2 {
-    font-size: 50px;
+.features h2, .faq h2 {
+    font-size: 3rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 1.3rem;
+    text-align: center;
 }
 
 
 hr {
     margin: auto;
     width: 100%;
-    height: 0.8rem;
+    height: 0.4rem;
     background: rgb(100, 105, 110);
 }
+
 
 
 /* --------------------- FAQ section ---------------------- */
 .faq {
     padding: 10px 12%;
-    text-align: center;
-    font-size: 18px;
 }
 
 
-.faq h2 {
-    font-weight: 500;
-    font-size: 40px;
+.faq ul li {
+    list-style: none;
 }
 
 
