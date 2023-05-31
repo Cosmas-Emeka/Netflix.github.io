@@ -19,6 +19,7 @@ nav {
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 10px;
+    height: 10vh;
 }
 
 
@@ -58,26 +59,20 @@ nav button {
 /* ------------------- Header section ------------------ */
 .header {
     width: 90%;
-    height: 100vh;
-    display: block;
-    margin: 1rem auto;
+    height: 90vh;
+    margin: auto;
     border-radius: 20px;
     background-image: linear-gradient(rgb(36, 3, 68, 0.7), rgb(36, 3, 68, 0.7)),
     url("./imgs/wall.jpg");
     background-size: cover;
     background-position: center;
     padding: 0.8rem 8%;
-    position: relative;
-}
-
-
-.header-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
     text-align: center;
-    margin-top: 100px;
 }
 
 
@@ -96,41 +91,61 @@ nav button {
 
 
 .email-signup {
-    background: #000;
     border-radius: 4px;
-    border: 1px solid rgb(100, 105, 110);
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 30px;
-    overflow: hidden;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    width: 100%;
+    gap: 0.5rem;
 }
 
 
 .email-signup input {
-    flex: 1;
+    width: 70%;
+    height: 50px;
+    text-align: center;
+    font-size: larger;
     border: 0;
     outline: 0;
-    margin-left: 20px;
+    font-family: 'Times New Roman', Times, serif;
     background: #000;
     color: #fff;
+    border: 1px solid rgb(100, 105, 110);
+    border-radius: 5px;
 }
 
 
 .email-signup button {
     background: #db0001;
     border: 0;
+    border-radius: 5px;
     outline: 0;
     color: #fff;
-    font-size: 16px;
+    font-size: 1.3rem;
     cursor: pointer;
-    padding: 15px 30px;
-    opacity: 160%;
+    height: 50px;
+    font-weight: 600;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+}
+
+
+.email-signup button:hover {
+    background: #a60606;
+    transition: 1s;
 }
 
 
 /* ----------------- Features section -------------------- */
 .features {
+    width: 100%;
+    margin: auto;
     padding: 50px 12%;
     font-size: 22px;
 }
@@ -140,24 +155,35 @@ nav button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
-    margin-top: 1rem;
+    margin-top: 5rem;
+    gap: 1rem;
+    text-align: center;
+}
+
+
+@media (max-width: 800px) {
+    .row {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .reverse {
+        flex-direction: column-reverse;
+    }
 }
 
 
 .text-col, .img-col {
     flex-basis: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
 }
 
 
 .img-col img {
     display: block;
-    width: 90%;
+    width: 100%;
     margin: auto;
-    border-right: 1px solid #db0001;
-    border-bottom: 1px solid #db0001;
 }
 
 
@@ -190,3 +216,25 @@ hr {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+    * {
+        font-size: small;
+    }
+}
