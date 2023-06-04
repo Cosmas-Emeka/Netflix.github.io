@@ -25,8 +25,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 10px;
+    padding-left: 2rem;
+    padding-right: 1rem;
     height: 10vh;
 }
 
@@ -57,7 +57,7 @@ nav button {
 }
 
 
-@media (max-width: 314px) {
+@media (max-width: 481px) {
     .language-btn {
         display: none;
     }
@@ -205,7 +205,7 @@ nav button {
 
 hr {
     margin: auto;
-    width: 100%;
+    width: 90%;
     height: 0.4rem;
     background: rgb(100, 105, 110);
 }
@@ -223,6 +223,82 @@ hr {
 }
 
 
+.accordion {
+    margin: 4rem auto;
+    width: 100%;
+    max-width: 750px;
+}
+
+
+.accordion li {
+    width: 100%;
+    padding: 5px;
+}
+
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background: var(--net-ash);
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+
+label::after {
+    content: "+";
+    font-size: 2rem;
+    position: absolute;
+    right: 1.2rem;
+    transition: transform 0.5s;
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+.accordion .content {
+    background: var(--net-ash);
+    text-align: left;
+    padding: 0 1.3rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+
+.accordion input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 2rem 1.3rem;
+}
+
+
+.accordion input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+
+
+.faq .signup {
+    margin: auto;
+}
+
+
+.faq div h5 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+.faq .signup form {
+    margin: 2rem auto;
+}
 
 
 
@@ -233,7 +309,7 @@ hr {
 
 
 
-
+ 
 
 
 
