@@ -37,7 +37,7 @@ nav {
 }
 
 
-nav button {
+nav button, footer button {
     border: 0;
     outline: 0;
     background: var(--net-red);
@@ -301,6 +301,62 @@ input[type="radio"] {
 }
 
 
+
+/* ---------------- Footer ------------------ */
+footer {
+    padding: 3.1rem 0 1rem;
+    color: #fff;
+}
+
+
+footer a {
+    color: #fff;
+}
+
+
+footer h4 {
+    margin-left: 10%;
+    font-size: 1.3rem;
+}
+
+
+footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+}
+
+
+footer .col a {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+footer .row {
+    align-items: flex-start;
+}
+
+
+.gold, .gold h3 {
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 0;
+    color: gold;
+    text-decoration: none;
+}
+
+
+footer button {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: space-between;
+    background: transparent;
+    border: 1px solid #fff;
+    margin: 2.5rem 12%;
+}
 
 
 
